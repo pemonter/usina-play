@@ -1,27 +1,51 @@
-#container {
-  text-align: center;
+ion-content {
+  --padding-top: 1rem;
+  --padding-start: 2rem;
+  --padding-end: 2rem;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.container {
+  margin-bottom: 2rem;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+ion-label {
+  min-height: 3.5rem;
 
-  color: #8c8c8c;
+  display: flex;
+  align-items: center;
 
-  margin: 0;
+  font-family: "Roboto-Black";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  gap: 0.5rem;
+
+  ion-badge {
+    font-family: "Roboto-Black";
+    font-size: 0.5rem;
+  }
 }
 
-#container a {
-  text-decoration: none;
+carousel-personal,
+carousel-programs,
+carousel-contents {
+  position: relative;
+  left: 2.5rem;
+}
+
+.disable {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.programs-label {
+  display: flex;
 }

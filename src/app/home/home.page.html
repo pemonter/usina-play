@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<header></header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+    <ion-label>
+      Personal online
+      <ion-button fill="clear" class="add-button ion-no-padding">
+        <rounded-icon name="add" size="medium" />
+      </ion-button>
+    </ion-label>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <carousel-personal></carousel-personal>
+  </div>
+
+  <div class="container">
+    <ion-label>
+      Programas
+      <ion-badge color="primary">Novo</ion-badge>
+    </ion-label>
+
+    <carousel-programs></carousel-programs>
+  </div>
+
+  <div class="container disable">
+    <ion-label>
+      Conteúdos
+    </ion-label>
+
+    <carousel-contents></carousel-contents>
   </div>
 </ion-content>

@@ -1,0 +1,28 @@
+ion-icon {
+  --color: var(--ion-color-primary);
+
+  border: 1px solid var(--ion-color-primary);
+  border-radius: 50%;
+
+  padding: 0.25rem;
+
+  &.icon-small {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+
+  &.icon-medium {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+
+  &.icon-large {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &.ion-color-light {
+    --color: #FFF;
+    border: 1px solid #FFF;
+  }
+}
